@@ -5,7 +5,7 @@ require "shipit_api/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "shipit_api"
-  spec.version       = ShipitApi::VERSION
+  spec.version       = ShipitAPI::VERSION
   spec.authors       = ["Nelson Pato Jimenez"]
   spec.email         = ["developer.jimenez@gmail.com"]
 

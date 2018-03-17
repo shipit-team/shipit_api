@@ -1,5 +1,5 @@
 require "shipit_api/version"
 
-module ShipitApi
+module ShipitAPI
   # Your code goes here...
 end

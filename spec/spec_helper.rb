@@ -1,5 +1,21 @@
 require "bundler/setup"
 require "shipit_api"
+require "webmock/rspec"
+require "vcr"
+require "turn"
+
+WebMock.disable_net_connect!(allow_localhost: true)
+
+Turn.config do |config|
+  config.format = :outline
+  config.trace = true
+  config.natural = true
+end
+
+VCR.configure do |config|
+  config.cassette_library_dir = "spec/fixtures/shipit_api_cassettes"
+  config.hook_into :webmock
+end
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

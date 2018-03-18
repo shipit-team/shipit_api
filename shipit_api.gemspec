@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Nelson Pato Jimenez"]
   spec.email         = ["developer.jimenez@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{ShipitAPI is a lightweight gem for accessing the Shipit REST web services}
+  spec.description   = %q{ShipitAPI is a lightweight gem for accessing the Shipit REST web services}
+  spec.homepage      = "https://developers.shipit.cl/v1.0/reference"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -33,7 +33,10 @@ Gem::Specification.new do |spec|
   spec.add_dependency "faraday", '~> 0.9'
   spec.add_dependency "uri_template", '~> 0.7'
 
-  spec.add_development_dependency "pry-byebyg"
+  spec.add_development_dependency "pry-byebug"
+  spec.add_development_dependency "webmock"
+  spec.add_development_dependency "vcr"
+  spec.add_development_dependency "turn"
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"

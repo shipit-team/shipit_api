@@ -12,6 +12,13 @@ GEM
       public_suffix (>= 2.0.2, < 4.0)
     ansi (1.5.0)
     byebug (10.0.0)
+    capybara (2.18.0)
+      addressable
+      mini_mime (>= 0.1.3)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      xpath (>= 2.0, < 4.0)
     coderay (1.1.2)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
@@ -20,8 +27,12 @@ GEM
       multipart-post (>= 1.2, < 3)
     hashdiff (0.3.7)
     method_source (0.9.0)
+    mini_mime (1.0.0)
+    mini_portile2 (2.3.0)
     minitest (4.7.5)
     multipart-post (2.0.0)
+    nokogiri (1.8.2)
+      mini_portile2 (~> 2.3.0)
     pry (0.11.3)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
@@ -29,6 +40,9 @@ GEM
       byebug (~> 10.0)
       pry (~> 0.10)
     public_suffix (3.0.2)
+    rack (2.0.4)
+    rack-test (0.8.3)
+      rack (>= 1.0, < 3)
     rake (10.5.0)
     rspec (3.7.0)
       rspec-core (~> 3.7.0)
@@ -53,12 +67,15 @@ GEM
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff
+    xpath (3.0.0)
+      nokogiri (~> 1.8)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   bundler (~> 1.16)
+  capybara
   pry-byebug
   rake (~> 10.0)
   rspec (~> 3.0)

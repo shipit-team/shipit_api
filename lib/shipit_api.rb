@@ -7,5 +7,4 @@ require 'shipit_api/base'
 require 'shipit_api/package'
 
 module ShipitAPI
-  # Your code goes here...
 end

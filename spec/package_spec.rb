@@ -1,21 +1,41 @@
 RSpec.describe ShipitAPI::Package do
-  describe "default connection" do
+  before(:each) do
+    ShipitAPI::Config.setup do |config|
+      config.x_shipit_email = "staff@shipit.cl"
+      config.x_shipit_access_token = "v8fH62dPTULmrAEXxhzB"
+    end
+  end
 
-    xit "check stub setting" do
-      stub_request(:post, "www.google.com").
-          with(headers: { 'Content-Length' => 3 }).to_return(body: "abc")
+  before do
+    VCR.insert_cassette 'package', record: :new_episodes
+  end
 
-      req = Net::HTTP::Post.new("/")
-      req['Content-Length'] = 3
+  after do
+    VCR.eject_cassette
+  end
 
-      Net::HTTP.start('www.google.com', 80) {|http|
-        http.request(req, 'abc')
-      }
+  describe "default instance attributes" do
+    let(:package) { ShipitAPI::Package.new }
+    let(:last_package) { package.latest }
 
-      request(:post, "www.google.com").
-        with(body: "abc", headers: { 'Content-Length' => 3 }).should have_been_made.once
+    it 'must have a latest method' do
+      expect(package).to respond_to(:latest)
+    end
 
-      request(:get, "www.something.com").should_not have_been_made
+    it 'must parse the api response from JSON to Hash' do
+      expect(package.latest).to be_an_instance_of(Hash)
+    end
+
+    it 'must get the right latest reference' do
+      expect(package.latest['reference']).to eq(last_package['reference'])
+    end
+  end
+
+  describe "GET all packages" do
+    let(:package) { ShipitAPI::Package.new }
+
+    it 'get all packages in Array' do
+      expect(package.all).to be_an_instance_of(Array)
     end
   end
 end

@@ -5,7 +5,7 @@ require "turn"
 require 'vcr'
 require "shipit_api"
 
-#WebMock.disable_net_connect!(allow_localhost: true)
+WebMock.disable_net_connect!(allow_localhost: true)
 
 Turn.config do |config|
   config.format = :outline

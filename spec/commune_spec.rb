@@ -1,0 +1,37 @@
+RSpec.describe ShipitAPI::Package do
+  before(:each) do
+    ShipitAPI::Config.setup do |config|
+      config.x_shipit_email = "staff@shipit.cl"
+      config.x_shipit_access_token = "v8fH62dPTULmrAEXxhzB"
+    end
+  end
+
+  before do
+    VCR.insert_cassette 'commune', record: :new_episodes
+  end
+
+  after do
+    VCR.eject_cassette
+  end
+
+  let(:commune) { ShipitAPI::Commune.new }
+
+  describe "GET communes" do
+    it 'return all communes' do
+      communes = commune.all
+      expect(communes).to be_an_instance_of(Array)
+    end
+
+    xit 'return a specific commune information by name' do
+      commune_found = commune.find({ name: "Las Condes" })
+      expect(commune["name"]).to eq("Las Condes")
+    end
+
+    it 'return a specific commune information by ID' do
+      commune_found = commune.find({ id: 12 })
+      expect(commune_found["name"]).to eq("ANTOFAGASTA")
+    end
+
+    xit 'return an error if commune not exist'
+  end
+end

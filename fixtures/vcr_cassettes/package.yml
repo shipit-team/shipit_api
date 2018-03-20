@@ -3208,4 +3208,49 @@ http_interactions:
         cmVmZXJlbmNlIjpudWxsfV0=
     http_version: 
   recorded_at: Mon, 19 Mar 2018 03:05:35 GMT
+- request:
+    method: post
+    uri: https://api.shipit.cl/v/packages
+    body:
+      encoding: UTF-8
+      string: '{"reference":"test-1ohop","full_name":"Nelson Jimenez","email":"nelson@shipit.cl","items_count":1,"cellphone":"+569905021","is_payable":false,"packing":"Sin
+        Empaque","shipping_type":"Normal","destiny":"Domicilio","courier_for_client":"","address_attributes":{"commune_id":12,"street":"Nuestra
+        señora de los angeles","number":"185","complement":"Oficina E"},"with_purchase_insurance":false}'
+    headers:
+      X-Shipit-Email:
+      - staff@shipit.cl
+      X-Shipit-Access-Token:
+      - v8fH62dPTULmrAEXxhzB
+      Content-Type:
+      - application/json
+      Accept:
+      - application/vnd.shipit.v2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Mon, 19 Mar 2018 14:38:13 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '46'
+      Connection:
+      - keep-alive
+      X-Request-Id:
+      - bc4a90e4-c504-435a-9823-b2f5a0553043
+      X-Runtime:
+      - '0.213010'
+    body:
+      encoding: UTF-8
+      string: '{"status":500,"error":"Internal Server Error"}'
+    http_version: 
+  recorded_at: Mon, 19 Mar 2018 14:38:13 GMT
 recorded_with: VCR 4.0.0

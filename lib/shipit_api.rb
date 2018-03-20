@@ -7,6 +7,7 @@ require 'shipit_api/version'
 require 'shipit_api/base'
 require 'shipit_api/session'
 require 'shipit_api/package'
+require 'shipit_api/commune'
 
 module ShipitAPI
 end

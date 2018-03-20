@@ -86,7 +86,7 @@ RSpec.describe ShipitAPI::Package do
     end
 
     it 'must return the attribute values if present in latest' do
-      expect(@package['reference']).to eq("app-01")
+      expect(@package['reference']).to eq("app-007")
     end
   end
 end

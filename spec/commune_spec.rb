@@ -24,7 +24,7 @@ RSpec.describe ShipitAPI::Package do
 
     xit 'return a specific commune information by name' do
       commune_found = commune.find({ name: "Las Condes" })
-      expect(commune["name"]).to eq("Las Condes")
+      expect(commune_found["name"]).to eq("Las Condes")
     end
 
     it 'return a specific commune information by ID' do

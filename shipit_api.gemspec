@@ -32,12 +32,11 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "faraday", '~> 0.9'
   spec.add_dependency "uri_template", '~> 0.7'
-  spec.add_dependency "activesupport"
+  spec.add_dependency "activesupport", '> 4.1.11'
 
   spec.add_development_dependency "pry-byebug"
   spec.add_development_dependency "webmock"
   spec.add_development_dependency "vcr"
-  spec.add_development_dependency "turn"
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"

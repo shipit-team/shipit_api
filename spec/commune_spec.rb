@@ -1,8 +1,8 @@
 RSpec.describe ShipitAPI::Package do
   before(:each) do
     ShipitAPI::Config.setup do |config|
-      config.x_shipit_email = "staff@shipit.cl"
-      config.x_shipit_access_token = "v8fH62dPTULmrAEXxhzB"
+      config.x_shipit_email = "api.account@shipit.cl"
+      config.x_shipit_access_token = "PEV23AThMLiySxtpeP5N"
     end
   end
 

@@ -1,8 +1,21 @@
-# ShipitApi
+Shipit API
+===========
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/shipit_api`. To experiment with that code, run `bin/console` for an interactive prompt.
+The Shipit API gem allows Ruby developers to access to admin information of Shipit client account.
 
-TODO: Delete this and the text above, and describe your gem
+The API is implemented as JSON over HTTP using all four verbs (GET/POST/PUT/DELETE(. Each resource like Package, SKU or Quotation has
+its own URL and is manipulated in isolation. In other words, we've tried to make the API follow the REST principles as much as possible.
+
+## Usage
+### Requirements
+
+* Create an account into https://shipit.cl
+* Sign in into https://clientes.shipit.cl/accounts/sign_in
+* Get the email and token from section: Inicio -> API
+
+### Sandbox
+
+By default sandbox is false. If you need to active sandbox contact us. (integraciones@shipit.cl)
 
 ## Installation
 
@@ -20,15 +33,12 @@ Or install it yourself as:
 
     $ gem install shipit_api
 
-## Usage
+## Getting Started
 
-TODO: Write usage instructions here
+Shipit API uses
 
-## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 

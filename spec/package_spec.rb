@@ -1,8 +1,8 @@
 RSpec.describe ShipitAPI::Package do
   before(:each) do
     ShipitAPI::Config.setup do |config|
-      config.x_shipit_email = "staff@shipit.cl"
-      config.x_shipit_access_token = "v8fH62dPTULmrAEXxhzB"
+      config.x_shipit_email = "api.account@shipit.cl"
+      config.x_shipit_access_token = "PEV23AThMLiySxtpeP5N"
     end
   end
 
@@ -48,7 +48,7 @@ RSpec.describe ShipitAPI::Package do
     end
   end
 
-  describe 'POST package' do
+  describe 'POST package to Pick and Pack service' do
     it 'created package' do
       hash = {
         reference: "test-1#{rand(36**4).to_s(36)}",
@@ -76,7 +76,7 @@ RSpec.describe ShipitAPI::Package do
       expect(@package).to be_an_instance_of(Hash)
     end
 
-    it 'must return an error' do
+    it 'must return an error with status 422' do
     end
   end
 

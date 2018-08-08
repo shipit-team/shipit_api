@@ -54,19 +54,19 @@ module ShipitAPI
     def all
       @opts = @opts.empty? ? { year: Time.now.year, month: Time.now.month } : @opts
       response = @api_call.get('', @opts)
-      JSON.parse(response.body)
+      JSON.parse(response.body, symbolize_names: true)
     end
 
     def find(opts = opts)
       opts = opts.empty? ? StandardError : opts
       response = @api_call.get("#{opts[:id]}")
-      JSON.parse(response.body)
+      JSON.parse(response.body, symbolize_names: true)
     end
 
     def save
       @opts = @opts.empty? ? StandardError : @opts
       response = @api_call.post('',@opts.to_json)
-      JSON.parse(response.body)
+      JSON.parse(response.body, symbolize_names: true)
     end
 
     def destroy
@@ -75,7 +75,7 @@ module ShipitAPI
     def latest
       @opts = @opts.empty? ? { year: Time.now.year, month: Time.now.month } : @opts
       response = @api_call.get('', @opts)
-      JSON.parse(response.body).last
+      JSON.parse(response.body, symbolize_names: true).last
     end
   end
 end

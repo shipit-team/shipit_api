@@ -1649,4 +1649,335 @@ http_interactions:
       string: '{"status":500,"error":"Internal Server Error"}'
     http_version: 
   recorded_at: Tue, 20 Mar 2018 15:50:52 GMT
+- request:
+    method: get
+    uri: https://api.shipit.cl/v/packages?month=4&year=2018
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Shipit-Email:
+      - staff@shipit.cl
+      X-Shipit-Access-Token:
+      - v8fH62dPTULmrAEXxhzB
+      Content-Type:
+      - application/json
+      Accept:
+      - application/vnd.shipit.v0.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Mon, 02 Apr 2018 19:14:20 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"2fe4d05fcc58aaa45f440bc3f84538e7"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 07c9b227-500d-4785-a9b3-3c756fc87106
+      X-Runtime:
+      - '0.041540'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siaWQiOjI5NjI1MSwicmVmZXJlbmNlIjoiaGlyd2ViaG9rIiwiZnVsbF9u
+        YW1lIjoiaGlyb2NoaSIsImVtYWlsIjoiaGlyb2NoaUBzaGlwaXQuY2wiLCJp
+        dGVtc19jb3VudCI6MTIsImNlbGxwaG9uZSI6Iis1Njk5MDUwMzE4MiIsImlz
+        X3BheWFibGUiOmZhbHNlLCJwYWNraW5nIjoiU2luIGVtcGFxdWUiLCJzaGlw
+        cGluZ190eXBlIjoiTm9ybWFsIiwiZGVzdGlueSI6IkRvbWljaWxpbyIsImNv
+        dXJpZXJfZm9yX2NsaWVudCI6InN0YXJrZW4iLCJ0cmFja2luZ19udW1iZXIi
+        OiI5MTIwMjE4MTIiLCJhcHByb3hfc2l6ZSI6Ik1lZGlhbm8gKDMweDMweDMw
+        Y20pIiwic3RhdHVzIjoiaW5fcHJlcGFyYXRpb24iLCJjb3VyaWVyX3N0YXR1
+        cyI6IkVOIE9SSUdFTiIsImxlbmd0aCI6MzAuMCwid2lkdGgiOjMwLjAsImhl
+        aWdodCI6MzAuMCwid2VpZ2h0IjoxLjIsImRlbGl2ZXJ5X3RpbWUiOm51bGws
+        ImNyZWF0ZWRfYXQiOiIyMDE4LTA0LTAyVDExOjI2OjU3LjkxOC0wMzowMCIs
+        InVwZGF0ZWRfYXQiOiIyMDE4LTA0LTAyVDEzOjI4OjAxLjM5Ni0wMzowMCIs
+        ImNvdXJpZXJfdXJsIjoiaHR0cDovL3d3dy5zdGFya2VuLmNsL3NlZ3VpbWll
+        bnRvP2NvZGlnbz05MTIwMjE4MTIiLCJvbGRfdGlja2V0X3VybF9jb3VyaWVy
+        IjoiaHR0cHM6Ly9wcmludGVyLWxhYmVscy5zMy11cy13ZXN0LTIuYW1hem9u
+        YXdzLmNvbS9TVC8yMDE4LzQvMi8yOTYyNTFfXzAyXzA0XzIwMThfXzkxMjAy
+        MTgxMi56cGwiLCJ0aWNrZXRfc2hpcGl0X3VybCI6Imh0dHBzOi8vcHJpbnRl
+        ci1sYWJlbHMuczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20vc2hpcGl0LzIw
+        MTgvNC8yLzI5NjI1MV9zaGlwaXRsYWJlbC5wZGYiLCJ0aWNrZXRfdXJsIjoi
+        aHR0cHM6Ly9wcmludGVyLWxhYmVscy5zMy11cy13ZXN0LTIuYW1hem9uYXdz
+        LmNvbS9TVC8yMDE4LzQvMi9wYWNrXzI5NjI1MV9fMDJfMDRfMjAxOF9fOTEy
+        MDIxODEyLnpwbCIsInRpY2tldF9zaGlwaXRfcGRmX3VybCI6Imh0dHBzOi8v
+        cHJpbnRlci1sYWJlbHMuczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20vU1Qv
+        MjAxOC80LzIvcGFja18yOTYyNTFfXzAyXzA0XzIwMThfXzkxMjAyMTgxMi5w
+        ZGYiLCJsaW5rIjoiaHR0cHM6Ly9hcGkuc2hpcGl0LmNsL3YvcGFja2FnZXMv
+        Mjk2MjUxIiwiYWRkcmVzcyI6eyJzdHJlZXQiOiJOdWVzdHJhIHNlw7FvcmEg
+        ZGUgbG9zIMOBbmdlbGVzIiwibnVtYmVyIjoiMTg1IiwiY29tcGxlbWVudCI6
+        Ik9maWNpbmEgRSIsImNvbW11bmUiOiJMQVMgQ09OREVTIiwiY29vcmRzIjp7
+        ImxhdGl0dWRlIjowLjAsImxvbmdpdHVkZSI6MC4wfX0sImludmVudG9yeV9h
+        Y3Rpdml0eSI6bnVsbCwiaW50ZWdyYXRpb25fcmVmZXJlbmNlIjpudWxsfSx7
+        ImlkIjoyOTY4ODYsInJlZmVyZW5jZSI6ImhpcndlYmhrIiwiZnVsbF9uYW1l
+        IjoiaGlyb2NoaSIsImVtYWlsIjoiaGlyb2NoaUBzaGlwaXQuY2wiLCJpdGVt
+        c19jb3VudCI6MTIsImNlbGxwaG9uZSI6Iis1Njk5MDUwMzE4MiIsImlzX3Bh
+        eWFibGUiOmZhbHNlLCJwYWNraW5nIjoiU2luIGVtcGFxdWUiLCJzaGlwcGlu
+        Z190eXBlIjoiTm9ybWFsIiwiZGVzdGlueSI6IkRvbWljaWxpbyIsImNvdXJp
+        ZXJfZm9yX2NsaWVudCI6InN0YXJrZW4iLCJ0cmFja2luZ19udW1iZXIiOiI5
+        MTIwMjM0MDEiLCJhcHByb3hfc2l6ZSI6Ik1lZGlhbm8gKDMweDMweDMwY20p
+        Iiwic3RhdHVzIjoiaW5fcHJlcGFyYXRpb24iLCJjb3VyaWVyX3N0YXR1cyI6
+        IkVOIE9SSUdFTiIsImxlbmd0aCI6MzAuMCwid2lkdGgiOjMwLjAsImhlaWdo
+        dCI6MzAuMCwid2VpZ2h0IjoxLjIsImRlbGl2ZXJ5X3RpbWUiOm51bGwsImNy
+        ZWF0ZWRfYXQiOiIyMDE4LTA0LTAyVDEzOjUzOjIxLjI3MS0wMzowMCIsInVw
+        ZGF0ZWRfYXQiOiIyMDE4LTA0LTAyVDEzOjU0OjE3LjcxOS0wMzowMCIsImNv
+        dXJpZXJfdXJsIjoiaHR0cDovL3d3dy5zdGFya2VuLmNsL3NlZ3VpbWllbnRv
+        P2NvZGlnbz05MTIwMjM0MDEiLCJvbGRfdGlja2V0X3VybF9jb3VyaWVyIjoi
+        aHR0cHM6Ly9wcmludGVyLWxhYmVscy5zMy11cy13ZXN0LTIuYW1hem9uYXdz
+        LmNvbS9TVC8yMDE4LzQvMi8yOTY4ODZfXzAyXzA0XzIwMThfXzkxMjAyMzQw
+        MS56cGwiLCJ0aWNrZXRfc2hpcGl0X3VybCI6Imh0dHBzOi8vcHJpbnRlci1s
+        YWJlbHMuczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20vc2hpcGl0LzIwMTgv
+        NC8yLzI5Njg4Nl9zaGlwaXRsYWJlbC5wZGYiLCJ0aWNrZXRfdXJsIjoiaHR0
+        cHM6Ly9wcmludGVyLWxhYmVscy5zMy11cy13ZXN0LTIuYW1hem9uYXdzLmNv
+        bS9TVC8yMDE4LzQvMi9wYWNrXzI5Njg4Nl9fMDJfMDRfMjAxOF9fOTEyMDIz
+        NDAxLnpwbCIsInRpY2tldF9zaGlwaXRfcGRmX3VybCI6Imh0dHBzOi8vcHJp
+        bnRlci1sYWJlbHMuczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20vU1QvMjAx
+        OC80LzIvcGFja18yOTY4ODZfXzAyXzA0XzIwMThfXzkxMjAyMzQwMS5wZGYi
+        LCJsaW5rIjoiaHR0cHM6Ly9hcGkuc2hpcGl0LmNsL3YvcGFja2FnZXMvMjk2
+        ODg2IiwiYWRkcmVzcyI6eyJzdHJlZXQiOiJOdWVzdHJhIHNlw7FvcmEgZGUg
+        bG9zIMOBbmdlbGVzIiwibnVtYmVyIjoiMTg1IiwiY29tcGxlbWVudCI6Ik9m
+        aWNpbmEgRSIsImNvbW11bmUiOiJMQVMgQ09OREVTIiwiY29vcmRzIjp7Imxh
+        dGl0dWRlIjowLjAsImxvbmdpdHVkZSI6MC4wfX0sImludmVudG9yeV9hY3Rp
+        dml0eSI6bnVsbCwiaW50ZWdyYXRpb25fcmVmZXJlbmNlIjpudWxsfSx7Imlk
+        IjoyOTY5MTIsInJlZmVyZW5jZSI6Imhpcm93ZWIiLCJmdWxsX25hbWUiOiJo
+        aXJvIiwiZW1haWwiOiJoaXJvY2hpQHNoaXBpdC5jbCIsIml0ZW1zX2NvdW50
+        IjoyLCJjZWxscGhvbmUiOiIiLCJpc19wYXlhYmxlIjpmYWxzZSwicGFja2lu
+        ZyI6IlNpbiBlbXBhcXVlIiwic2hpcHBpbmdfdHlwZSI6Ik5vcm1hbCIsImRl
+        c3RpbnkiOiJEb21pY2lsaW8iLCJjb3VyaWVyX2Zvcl9jbGllbnQiOiJzdGFy
+        a2VuIiwidHJhY2tpbmdfbnVtYmVyIjoiOTEyMDI4NzQzIiwiYXBwcm94X3Np
+        emUiOiJQZXF1ZcOxbyAoMTB4MTB4MTBjbSkiLCJzdGF0dXMiOiJpbl9wcmVw
+        YXJhdGlvbiIsImNvdXJpZXJfc3RhdHVzIjpudWxsLCJsZW5ndGgiOjEwLjAs
+        IndpZHRoIjoxMC4wLCJoZWlnaHQiOjEwLjAsIndlaWdodCI6MS4wLCJkZWxp
+        dmVyeV90aW1lIjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOC0wNC0wMlQxNDox
+        OTo0My44MjMtMDM6MDAiLCJ1cGRhdGVkX2F0IjoiMjAxOC0wNC0wMlQxNjow
+        MDoxNy42ODYtMDM6MDAiLCJjb3VyaWVyX3VybCI6Imh0dHA6Ly93d3cuc3Rh
+        cmtlbi5jbC9zZWd1aW1pZW50bz9jb2RpZ289OTEyMDI4NzQzIiwib2xkX3Rp
+        Y2tldF91cmxfY291cmllciI6Imh0dHBzOi8vcHJpbnRlci1sYWJlbHMuczMt
+        dXMtd2VzdC0yLmFtYXpvbmF3cy5jb20vU1QvMjAxOC80LzIvMjk2OTEyX18w
+        Ml8wNF8yMDE4X185MTIwMjg3NDMuenBsIiwidGlja2V0X3NoaXBpdF91cmwi
+        Om51bGwsInRpY2tldF91cmwiOiJodHRwczovL3ByaW50ZXItbGFiZWxzLnMz
+        LXVzLXdlc3QtMi5hbWF6b25hd3MuY29tL1NULzIwMTgvNC8yL3BhY2tfMjk2
+        OTEyX18wMl8wNF8yMDE4X185MTIwMjg3NDMuenBsIiwidGlja2V0X3NoaXBp
+        dF9wZGZfdXJsIjoiaHR0cHM6Ly9wcmludGVyLWxhYmVscy5zMy11cy13ZXN0
+        LTIuYW1hem9uYXdzLmNvbS9TVC8yMDE4LzQvMi9wYWNrXzI5NjkxMl9fMDJf
+        MDRfMjAxOF9fOTEyMDI4NzQzLnBkZiIsImxpbmsiOiJodHRwczovL2FwaS5z
+        aGlwaXQuY2wvdi9wYWNrYWdlcy8yOTY5MTIiLCJhZGRyZXNzIjp7InN0cmVl
+        dCI6InF3ZXF3ZXF3ZSIsIm51bWJlciI6IjEyMzEyMyIsImNvbXBsZW1lbnQi
+        OiJxd2Vxd2UiLCJjb21tdW5lIjoiTEFTIENPTkRFUyIsImNvb3JkcyI6eyJs
+        YXRpdHVkZSI6MC4wLCJsb25naXR1ZGUiOjAuMH19LCJpbnZlbnRvcnlfYWN0
+        aXZpdHkiOnsiaW52ZW50b3J5X2FjdGl2aXR5X29yZGVyc19hdHRyaWJ1dGVz
+        IjpbeyJza3VfaWQiOjcyMDIsImFtb3VudCI6Miwid2FyZWhvdXNlX2lkIjox
+        fV19LCJpbnRlZ3JhdGlvbl9yZWZlcmVuY2UiOm51bGx9XQ==
+    http_version: 
+  recorded_at: Mon, 02 Apr 2018 19:14:20 GMT
+- request:
+    method: get
+    uri: https://api.shipit.cl/v/packages?month=4&year=2018
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Shipit-Email:
+      - staff@shipit.cl
+      X-Shipit-Access-Token:
+      - v8fH62dPTULmrAEXxhzB
+      Content-Type:
+      - application/json
+      Accept:
+      - application/vnd.shipit.v0.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Mon, 02 Apr 2018 19:14:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"2fe4d05fcc58aaa45f440bc3f84538e7"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b4223969-fb72-47bd-9b83-9c55bd3dd06f
+      X-Runtime:
+      - '0.039643'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3siaWQiOjI5NjI1MSwicmVmZXJlbmNlIjoiaGlyd2ViaG9rIiwiZnVsbF9u
+        YW1lIjoiaGlyb2NoaSIsImVtYWlsIjoiaGlyb2NoaUBzaGlwaXQuY2wiLCJp
+        dGVtc19jb3VudCI6MTIsImNlbGxwaG9uZSI6Iis1Njk5MDUwMzE4MiIsImlz
+        X3BheWFibGUiOmZhbHNlLCJwYWNraW5nIjoiU2luIGVtcGFxdWUiLCJzaGlw
+        cGluZ190eXBlIjoiTm9ybWFsIiwiZGVzdGlueSI6IkRvbWljaWxpbyIsImNv
+        dXJpZXJfZm9yX2NsaWVudCI6InN0YXJrZW4iLCJ0cmFja2luZ19udW1iZXIi
+        OiI5MTIwMjE4MTIiLCJhcHByb3hfc2l6ZSI6Ik1lZGlhbm8gKDMweDMweDMw
+        Y20pIiwic3RhdHVzIjoiaW5fcHJlcGFyYXRpb24iLCJjb3VyaWVyX3N0YXR1
+        cyI6IkVOIE9SSUdFTiIsImxlbmd0aCI6MzAuMCwid2lkdGgiOjMwLjAsImhl
+        aWdodCI6MzAuMCwid2VpZ2h0IjoxLjIsImRlbGl2ZXJ5X3RpbWUiOm51bGws
+        ImNyZWF0ZWRfYXQiOiIyMDE4LTA0LTAyVDExOjI2OjU3LjkxOC0wMzowMCIs
+        InVwZGF0ZWRfYXQiOiIyMDE4LTA0LTAyVDEzOjI4OjAxLjM5Ni0wMzowMCIs
+        ImNvdXJpZXJfdXJsIjoiaHR0cDovL3d3dy5zdGFya2VuLmNsL3NlZ3VpbWll
+        bnRvP2NvZGlnbz05MTIwMjE4MTIiLCJvbGRfdGlja2V0X3VybF9jb3VyaWVy
+        IjoiaHR0cHM6Ly9wcmludGVyLWxhYmVscy5zMy11cy13ZXN0LTIuYW1hem9u
+        YXdzLmNvbS9TVC8yMDE4LzQvMi8yOTYyNTFfXzAyXzA0XzIwMThfXzkxMjAy
+        MTgxMi56cGwiLCJ0aWNrZXRfc2hpcGl0X3VybCI6Imh0dHBzOi8vcHJpbnRl
+        ci1sYWJlbHMuczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20vc2hpcGl0LzIw
+        MTgvNC8yLzI5NjI1MV9zaGlwaXRsYWJlbC5wZGYiLCJ0aWNrZXRfdXJsIjoi
+        aHR0cHM6Ly9wcmludGVyLWxhYmVscy5zMy11cy13ZXN0LTIuYW1hem9uYXdz
+        LmNvbS9TVC8yMDE4LzQvMi9wYWNrXzI5NjI1MV9fMDJfMDRfMjAxOF9fOTEy
+        MDIxODEyLnpwbCIsInRpY2tldF9zaGlwaXRfcGRmX3VybCI6Imh0dHBzOi8v
+        cHJpbnRlci1sYWJlbHMuczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20vU1Qv
+        MjAxOC80LzIvcGFja18yOTYyNTFfXzAyXzA0XzIwMThfXzkxMjAyMTgxMi5w
+        ZGYiLCJsaW5rIjoiaHR0cHM6Ly9hcGkuc2hpcGl0LmNsL3YvcGFja2FnZXMv
+        Mjk2MjUxIiwiYWRkcmVzcyI6eyJzdHJlZXQiOiJOdWVzdHJhIHNlw7FvcmEg
+        ZGUgbG9zIMOBbmdlbGVzIiwibnVtYmVyIjoiMTg1IiwiY29tcGxlbWVudCI6
+        Ik9maWNpbmEgRSIsImNvbW11bmUiOiJMQVMgQ09OREVTIiwiY29vcmRzIjp7
+        ImxhdGl0dWRlIjowLjAsImxvbmdpdHVkZSI6MC4wfX0sImludmVudG9yeV9h
+        Y3Rpdml0eSI6bnVsbCwiaW50ZWdyYXRpb25fcmVmZXJlbmNlIjpudWxsfSx7
+        ImlkIjoyOTY4ODYsInJlZmVyZW5jZSI6ImhpcndlYmhrIiwiZnVsbF9uYW1l
+        IjoiaGlyb2NoaSIsImVtYWlsIjoiaGlyb2NoaUBzaGlwaXQuY2wiLCJpdGVt
+        c19jb3VudCI6MTIsImNlbGxwaG9uZSI6Iis1Njk5MDUwMzE4MiIsImlzX3Bh
+        eWFibGUiOmZhbHNlLCJwYWNraW5nIjoiU2luIGVtcGFxdWUiLCJzaGlwcGlu
+        Z190eXBlIjoiTm9ybWFsIiwiZGVzdGlueSI6IkRvbWljaWxpbyIsImNvdXJp
+        ZXJfZm9yX2NsaWVudCI6InN0YXJrZW4iLCJ0cmFja2luZ19udW1iZXIiOiI5
+        MTIwMjM0MDEiLCJhcHByb3hfc2l6ZSI6Ik1lZGlhbm8gKDMweDMweDMwY20p
+        Iiwic3RhdHVzIjoiaW5fcHJlcGFyYXRpb24iLCJjb3VyaWVyX3N0YXR1cyI6
+        IkVOIE9SSUdFTiIsImxlbmd0aCI6MzAuMCwid2lkdGgiOjMwLjAsImhlaWdo
+        dCI6MzAuMCwid2VpZ2h0IjoxLjIsImRlbGl2ZXJ5X3RpbWUiOm51bGwsImNy
+        ZWF0ZWRfYXQiOiIyMDE4LTA0LTAyVDEzOjUzOjIxLjI3MS0wMzowMCIsInVw
+        ZGF0ZWRfYXQiOiIyMDE4LTA0LTAyVDEzOjU0OjE3LjcxOS0wMzowMCIsImNv
+        dXJpZXJfdXJsIjoiaHR0cDovL3d3dy5zdGFya2VuLmNsL3NlZ3VpbWllbnRv
+        P2NvZGlnbz05MTIwMjM0MDEiLCJvbGRfdGlja2V0X3VybF9jb3VyaWVyIjoi
+        aHR0cHM6Ly9wcmludGVyLWxhYmVscy5zMy11cy13ZXN0LTIuYW1hem9uYXdz
+        LmNvbS9TVC8yMDE4LzQvMi8yOTY4ODZfXzAyXzA0XzIwMThfXzkxMjAyMzQw
+        MS56cGwiLCJ0aWNrZXRfc2hpcGl0X3VybCI6Imh0dHBzOi8vcHJpbnRlci1s
+        YWJlbHMuczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20vc2hpcGl0LzIwMTgv
+        NC8yLzI5Njg4Nl9zaGlwaXRsYWJlbC5wZGYiLCJ0aWNrZXRfdXJsIjoiaHR0
+        cHM6Ly9wcmludGVyLWxhYmVscy5zMy11cy13ZXN0LTIuYW1hem9uYXdzLmNv
+        bS9TVC8yMDE4LzQvMi9wYWNrXzI5Njg4Nl9fMDJfMDRfMjAxOF9fOTEyMDIz
+        NDAxLnpwbCIsInRpY2tldF9zaGlwaXRfcGRmX3VybCI6Imh0dHBzOi8vcHJp
+        bnRlci1sYWJlbHMuczMtdXMtd2VzdC0yLmFtYXpvbmF3cy5jb20vU1QvMjAx
+        OC80LzIvcGFja18yOTY4ODZfXzAyXzA0XzIwMThfXzkxMjAyMzQwMS5wZGYi
+        LCJsaW5rIjoiaHR0cHM6Ly9hcGkuc2hpcGl0LmNsL3YvcGFja2FnZXMvMjk2
+        ODg2IiwiYWRkcmVzcyI6eyJzdHJlZXQiOiJOdWVzdHJhIHNlw7FvcmEgZGUg
+        bG9zIMOBbmdlbGVzIiwibnVtYmVyIjoiMTg1IiwiY29tcGxlbWVudCI6Ik9m
+        aWNpbmEgRSIsImNvbW11bmUiOiJMQVMgQ09OREVTIiwiY29vcmRzIjp7Imxh
+        dGl0dWRlIjowLjAsImxvbmdpdHVkZSI6MC4wfX0sImludmVudG9yeV9hY3Rp
+        dml0eSI6bnVsbCwiaW50ZWdyYXRpb25fcmVmZXJlbmNlIjpudWxsfSx7Imlk
+        IjoyOTY5MTIsInJlZmVyZW5jZSI6Imhpcm93ZWIiLCJmdWxsX25hbWUiOiJo
+        aXJvIiwiZW1haWwiOiJoaXJvY2hpQHNoaXBpdC5jbCIsIml0ZW1zX2NvdW50
+        IjoyLCJjZWxscGhvbmUiOiIiLCJpc19wYXlhYmxlIjpmYWxzZSwicGFja2lu
+        ZyI6IlNpbiBlbXBhcXVlIiwic2hpcHBpbmdfdHlwZSI6Ik5vcm1hbCIsImRl
+        c3RpbnkiOiJEb21pY2lsaW8iLCJjb3VyaWVyX2Zvcl9jbGllbnQiOiJzdGFy
+        a2VuIiwidHJhY2tpbmdfbnVtYmVyIjoiOTEyMDI4NzQzIiwiYXBwcm94X3Np
+        emUiOiJQZXF1ZcOxbyAoMTB4MTB4MTBjbSkiLCJzdGF0dXMiOiJpbl9wcmVw
+        YXJhdGlvbiIsImNvdXJpZXJfc3RhdHVzIjpudWxsLCJsZW5ndGgiOjEwLjAs
+        IndpZHRoIjoxMC4wLCJoZWlnaHQiOjEwLjAsIndlaWdodCI6MS4wLCJkZWxp
+        dmVyeV90aW1lIjpudWxsLCJjcmVhdGVkX2F0IjoiMjAxOC0wNC0wMlQxNDox
+        OTo0My44MjMtMDM6MDAiLCJ1cGRhdGVkX2F0IjoiMjAxOC0wNC0wMlQxNjow
+        MDoxNy42ODYtMDM6MDAiLCJjb3VyaWVyX3VybCI6Imh0dHA6Ly93d3cuc3Rh
+        cmtlbi5jbC9zZWd1aW1pZW50bz9jb2RpZ289OTEyMDI4NzQzIiwib2xkX3Rp
+        Y2tldF91cmxfY291cmllciI6Imh0dHBzOi8vcHJpbnRlci1sYWJlbHMuczMt
+        dXMtd2VzdC0yLmFtYXpvbmF3cy5jb20vU1QvMjAxOC80LzIvMjk2OTEyX18w
+        Ml8wNF8yMDE4X185MTIwMjg3NDMuenBsIiwidGlja2V0X3NoaXBpdF91cmwi
+        Om51bGwsInRpY2tldF91cmwiOiJodHRwczovL3ByaW50ZXItbGFiZWxzLnMz
+        LXVzLXdlc3QtMi5hbWF6b25hd3MuY29tL1NULzIwMTgvNC8yL3BhY2tfMjk2
+        OTEyX18wMl8wNF8yMDE4X185MTIwMjg3NDMuenBsIiwidGlja2V0X3NoaXBp
+        dF9wZGZfdXJsIjoiaHR0cHM6Ly9wcmludGVyLWxhYmVscy5zMy11cy13ZXN0
+        LTIuYW1hem9uYXdzLmNvbS9TVC8yMDE4LzQvMi9wYWNrXzI5NjkxMl9fMDJf
+        MDRfMjAxOF9fOTEyMDI4NzQzLnBkZiIsImxpbmsiOiJodHRwczovL2FwaS5z
+        aGlwaXQuY2wvdi9wYWNrYWdlcy8yOTY5MTIiLCJhZGRyZXNzIjp7InN0cmVl
+        dCI6InF3ZXF3ZXF3ZSIsIm51bWJlciI6IjEyMzEyMyIsImNvbXBsZW1lbnQi
+        OiJxd2Vxd2UiLCJjb21tdW5lIjoiTEFTIENPTkRFUyIsImNvb3JkcyI6eyJs
+        YXRpdHVkZSI6MC4wLCJsb25naXR1ZGUiOjAuMH19LCJpbnZlbnRvcnlfYWN0
+        aXZpdHkiOnsiaW52ZW50b3J5X2FjdGl2aXR5X29yZGVyc19hdHRyaWJ1dGVz
+        IjpbeyJza3VfaWQiOjcyMDIsImFtb3VudCI6Miwid2FyZWhvdXNlX2lkIjox
+        fV19LCJpbnRlZ3JhdGlvbl9yZWZlcmVuY2UiOm51bGx9XQ==
+    http_version: 
+  recorded_at: Mon, 02 Apr 2018 19:14:22 GMT
+- request:
+    method: get
+    uri: https://api.shipit.cl/v/settings
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Shipit-Email:
+      - staff@shipit.cl
+      X-Shipit-Access-Token:
+      - v8fH62dPTULmrAEXxhzB
+      Content-Type:
+      - application/json
+      Accept:
+      - application/vnd.shipit.v0.1.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Mon, 02 Apr 2018 19:14:24 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"34e8b80bd99bc06e391459dc2766e58f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9286b137-2aad-4208-84e1-4b66ba8309ba
+      X-Runtime:
+      - '0.012602'
+    body:
+      encoding: UTF-8
+      string: '{"id":1,"email_alert":null,"email_notification":"nelson@shipit.cl","service_id":3,"company_id":1,"is_default_price":true,"default_courier":"cxp","created_at":"2016-12-16T03:12:22.786-03:00","updated_at":"2017-02-06T21:27:39.265-03:00","configuration":{"pp":{"key":"","secret_key":"","price":"","sandbox":false,"packages_webhook_url":"https://eb57c040.ngrok.io/packages/webhook","pickups_webhook_url":null}}}'
+    http_version: 
+  recorded_at: Mon, 02 Apr 2018 19:14:24 GMT
 recorded_with: VCR 4.0.0

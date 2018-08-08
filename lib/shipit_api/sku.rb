@@ -5,7 +5,7 @@ module ShipitAPI
     end
 
     def self.all(opts = {})
-      new(opts).al
+      new(opts).all
     end
 
     def initialize(opts = {})
@@ -21,7 +21,7 @@ module ShipitAPI
     def find(opts = {})
       opts = opts.empty? ? StandardError : opts
       response = @api_call.get("#{opts[:id]}")
-      JSON.parse(response.body)
+      JSON.parse(response.body, symbolize_names: true)
     end
   end
 end

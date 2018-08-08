@@ -9,6 +9,8 @@ require 'shipit_api/session'
 require 'shipit_api/package'
 require 'shipit_api/commune'
 require 'shipit_api/sku'
+require 'shipit_api/quotation'
+require 'shipit_api/setting'
 
 module ShipitAPI
 end

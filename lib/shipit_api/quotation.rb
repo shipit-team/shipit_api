@@ -12,7 +12,6 @@ module ShipitAPI
 
     def get_prices
       package = { package: @opts }
-      binding.pry
       response = @api_call.post('', package.to_json)
       JSON.parse(response.body, symbolize_names: true)
     end

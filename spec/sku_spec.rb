@@ -6,14 +6,6 @@ RSpec.describe ShipitAPI::Sku do
     end
   end
 
-  before do
-    VCR.insert_cassette 'sku', record: :new_episodes
-  end
-
-  after do
-    VCR.eject_cassette
-  end
-
   let(:sku) { ShipitAPI::Sku.new }
 
   describe 'GET all skus' do

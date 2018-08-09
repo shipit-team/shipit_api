@@ -6,14 +6,6 @@ RSpec.describe ShipitAPI::Package do
     end
   end
 
-  before do
-    VCR.insert_cassette 'commune', record: :new_episodes
-  end
-
-  after do
-    VCR.eject_cassette
-  end
-
   let(:commune) { ShipitAPI::Commune.new }
 
   describe "GET communes" do

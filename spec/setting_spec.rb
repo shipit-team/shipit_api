@@ -6,14 +6,6 @@ RSpec.describe ShipitAPI::Setting do
     end
   end
 
-  before do
-    VCR.insert_cassette 'package', record: :new_episodes
-  end
-
-  after do
-    VCR.eject_cassette
-  end
-
   describe 'API call from external Apps' do
     let(:setting) { ShipitAPI::Setting.new }
 

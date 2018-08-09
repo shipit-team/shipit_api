@@ -6,14 +6,6 @@ RSpec.describe ShipitAPI::Package do
     end
   end
 
-  before do
-    VCR.insert_cassette 'package', record: :new_episodes
-  end
-
-  after do
-    VCR.eject_cassette
-  end
-
   let(:package) { ShipitAPI::Package.new }
 
   describe "default instance attributes" do

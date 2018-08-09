@@ -6,15 +6,6 @@ RSpec.describe ShipitAPI::Quotation do
     end
   end
 
-
-  before do
-    VCR.insert_cassette 'quotation', record: :new_episodes
-  end
-
-  after do
-    VCR.eject_cassette
-  end
-
   let(:quotation) { ShipitAPI::Quotation.new }
 
   describe "default instance attributes" do

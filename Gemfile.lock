@@ -70,7 +70,6 @@ GEM
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     uri_template (0.7.0)
-    vcr (4.0.0)
     webmock (3.3.0)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
@@ -84,11 +83,11 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.16)
   capybara
+  pry
   pry-byebug
   rake (~> 10.0)
   rspec (~> 3.0)
   shipit_api!
-  vcr
   webmock
 
 BUNDLED WITH

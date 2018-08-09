@@ -9,7 +9,6 @@ module ShipitAPI
                   :base_url, :accept, :headers
 
     def self.settings(version = 2)
-      puts "VERSION: #{version}"
       @settings ||= Config.new(version)
       @settings.set_version!(version)
     end

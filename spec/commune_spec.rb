@@ -24,6 +24,11 @@ RSpec.describe ShipitAPI::Package do
       expect(commune_found["name"]).to eq("ANTOFAGASTA")
     end
 
+    it 'return a specific commune information by name' do
+      commune_found = commune.find_by_name({ name: 'LAS CONDES' })
+      expect(commune_found['name']).to eq('LAS CONDES')
+    end
+
     xit 'return an error if commune not exist'
   end
 end

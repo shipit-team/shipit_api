@@ -11,9 +11,18 @@ module ShipitAPI
     end
 
     def get_prices
+      if !@opts[:commune_name].nil?
+        commune = get_commune
+        @opts.merge!({ to_commune_id: commune[:id]})
+      end
+
       package = { package: @opts }
       response = @api_call.post('', package.to_json)
       JSON.parse(response.body, symbolize_names: true)
+    end
+
+    def get_commune
+      ShipitAPI::Commune.find_by_name({ name: @opts[:commune_name] })
     end
 
     def quotaiton_attrs

@@ -19,7 +19,7 @@ module ShipitAPI
     def initialize(opts = {})
       @opts = opts
       @api_call = ShipitAPI::Session.connection(self.class.name)
-      build!
+      build! if !@opts.kind_of?(Array)
     end
 
     def attrs
@@ -65,7 +65,7 @@ module ShipitAPI
 
     def save
       @opts = @opts.empty? ? StandardError : @opts
-      response = @api_call.post('',@opts.to_json)
+      response = @api_call.post('mass_create', { packages: @opts }.to_json)
       JSON.parse(response.body, symbolize_names: true)
     end
 

@@ -1,8 +1,8 @@
 RSpec.describe ShipitAPI::Sku do
   before(:each) do
     ShipitAPI::Config.setup do |config|
-      config.x_shipit_email = "staff@shipit.cl"
-      config.x_shipit_access_token = "v8fH62dPTULmrAEXxhzB"
+      config.x_shipit_email = "shipit.api.fulfillment@shipit.cl"
+      config.x_shipit_access_token = "L4xxZi8-fh2iego8XssQ"
     end
   end
 
@@ -16,13 +16,14 @@ RSpec.describe ShipitAPI::Sku do
 
   describe 'GET package detail' do
     it 'return a Hash by id' do
-      sku_found = sku.find({ id: 3998 })
-      expect(sku_found["name"]).to eq("SKU-011")
+      sku_found = sku.find({ id: 9946 })
+      expect(sku_found[:name]).to eq("SKU-API-1")
     end
 
     xit 'return a Hash by name' do
-      sku_found = sku.find({ name: "SKU-011" })
-      expect(sku_found["id"]).to eq(3998)
+      sku_found = sku.find({ name: "SKU-API-1" })
+      binding.pry
+      expect(sku_found[:id]).to eq(9946)
     end
 
     xit 'return an error if sku not exist'

@@ -1,6 +1,5 @@
 module ShipitAPI
   class Setting
-
     def self.info(opts = {})
     end
 
@@ -19,8 +18,8 @@ module ShipitAPI
     end
 
     def save(opts = {})
+      @opts = opts.empty? ? @opts : opts
       set_hash!
-      @opts = @opts.empty? ? StandarError : @opts
     end
 
     private
@@ -28,9 +27,8 @@ module ShipitAPI
     attr_accessor :data
 
     def set_hash!
-      response = info
-      data = response["configuration"]["pp"]["packages_webhook_url"] =
-      binding.pry
+      response[:configuration][:pp][:packages_webhook_url] = @opts[:packages_webhook_url]
+
     end
   end
 end

@@ -7,14 +7,16 @@ RSpec.describe ShipitAPI::Setting do
   end
 
   describe 'API call from external Apps' do
-    let(:setting) { ShipitAPI::Setting.new }
-
-    it "GET my setting info" do
-      expect(setting.info).to be_an_instance_of(Hash)
+    before do
+      @setting = ShipitAPI::Setting.new
     end
 
-    it "PUT setting return new for webhook" do
-      object = setting.save({ packages_webhook_url: 'www.example.com/webhook' })
+    xit "GET my setting info" do
+      expect(@setting.info).to be_an_instance_of(Hash)
+    end
+
+    xit "PUT setting return new for webhook" do
+      object = @setting.save({ packages_webhook_url: 'www.example.com/webhook' })
       expect(object.packages_webhook_url).to 'www.example.com/weebhook'
     end
   end

@@ -15,7 +15,7 @@ module ShipitAPI
 
     def all
       response = @api_call.get('', @opts)
-      JSON.parse(response.body)
+      JSON.parse(response.body, symbolize_names: true)
     end
 
     def find(opts = {})

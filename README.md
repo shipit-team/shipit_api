@@ -56,7 +56,7 @@ ShipitAPI has the next methods to use API's Shipit:
 
 
 ### 1. Commune
-In this method you can use the next methods:
+In this class you can use the next methods:
 
 a. `all` method
 Return all communes from API
@@ -88,6 +88,21 @@ ShipitAPI::Commune.find_by_name({ name: 'LAS CONDES' })
 ```
 
 ### 2. Quotation
+In this class you can use the next methods:
+
+a. `get_prices` method
+
+Return a hash of prices for your package. It is necessary to specify `width`, `height`, `length`, `weight` and `commune_name` to calculate price.
+
+```ruby
+package = { width: 10, height: 10, length: 10, weight: 0.5, commune_name: 'LAS CONDES' }
+ShipitAPI::Quotation.get_prices(package)
+
+# Response
+# {:prices=>[{:courier=>{:name=>"correos_de_chile", :packet_from=>"LAS CONDES", :packet_to=>"LAS CONDES"}, :name=>"Domicilio", :price=>2660, :cost=>2660, :days=>1, :available_to_shipping=>false, :original_courier=>"correos_de_chile", :volumetric_weight=>0.5, :is_payable=>false}, {:courier=>{:name=>"chilexpress", :packet_from=>"LAS CONDES", :packet_to=>"LAS CONDES"}, :name=>"DIA HABIL SIGUIENTE", :price=>3410, :cost=>2046, :days=>1, :available_to_shipping=>true, :original_courier=>"chilexpress", :volumetric_weight=>0.5, :is_payable=>false}, {:courier=>{:name=>"starken", :packet_from=>"LAS CONDES", :packet_to=>"LAS CONDES"}, :name=>"DOMICILIO", :price=>3720, :cost=>2992, :days=>1, :available_to_shipping=>true, :original_courier=>"starken", :volumetric_weight=>0.5, :is_payable=>false}], :lower_price=>{:courier=>{:name=>"chilexpress", :packet_from=>"LAS CONDES", :packet_to=>"LAS CONDES"}, :name=>"Domicilio", :price=>2660, :cost=>2046, :days=>1, :available_to_shipping=>true, :original_courier=>"correos_de_chile", :volumetric_weight=>0.5}, :higesth_price=>{:courier=>{:name=>"starken", :packet_from=>"LAS CONDES", :packet_to=>"LAS CONDES"}, :name=>"DOMICILIO", :price=>3720, :cost=>2992, :days=>1, :available_to_shipping=>true, :original_courier=>"starken", :volumetric_weight=>0.5, :is_payable=>false}}
+```
+
+Shipit by default use `:lower_price` to send packages :fire:
 
 ### 3. Setting
 

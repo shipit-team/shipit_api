@@ -122,16 +122,23 @@ ShipitAPI::Setting.info
 In this class you can use the next methods:
 
 a. `find` method
+Return package by `Package ID`
+```ruby
+ShipitAPI::Package.find({ id: 19823773})
+
+# Response
+# [{:id=>19823773, :reference=>"test-19ci2", :full_name=>"Nelson Jimenez", :email=>"nelson@shipit.cl", :items_count=>1, :cellphone=>"+569905021", :is_payable=>false, :packing=>"Sin Empaque", :shipping_type=>"Normal", :destiny=>"Domicilio", :courier_for_client=>"chilexpress", :tracking_number=>"99716543522", :approx_size=>nil, :status=>"in_preparation", :courier_status=>"Pieza en poder del remitente", :length=>10.0, :width=>10.0, :height=>10.0, :weight=>1.0,...]
+```
+
 b. `all` method
-
 Return all your packages
-
 ```ruby
 ShipitAPI::Package.all
 
 # Response
 # [{:id=>19823773, :reference=>"test-19ci2", :full_name=>"Nelson Jimenez", :email=>"nelson@shipit.cl", :items_count=>1, :cellphone=>"+569905021", :is_payable=>false, :packing=>"Sin Empaque", :shipping_type=>"Normal", :destiny=>"Domicilio", :courier_for_client=>"chilexpress", :tracking_number=>"99716543522", :approx_size=>nil, :status=>"in_preparation", :courier_status=>"Pieza en poder del remitente", :length=>10.0, :width=>10.0, :height=>10.0, :weight=>1.0,...]
 ```
+
 c. `latest` method
 Return latest package created.
 ```ruby
@@ -142,6 +149,31 @@ ShipitAPI::Package.latest
 ```
 
 d. `save` method
+Create a new package in your account
+```ruby
+    array_hash = [{
+      reference: "test-1#{rand(36**4).to_s(36)}",
+      full_name: "Nelson Jimenez",
+      email: "nelson@shipit.cl",
+      items_count: 1,
+      cellphone: "+569905021",
+      is_payable: false,
+      packing: "Sin Empaque",
+      shipping_type: "Normal",
+      destiny: "Domicilio",
+      courier_for_client: nil,
+      address_attributes: {
+        commune_id: 308,
+        street: "Nuestra señora de los angeles",
+        number: "185",
+        complement: "Oficina E"
+      },
+      with_purchase_insurance: false
+    }]
+
+    package = ShipitAPI::Package.new(array_hash)
+    @package = package.save
+```
 
 ### 5. Sku
 In this class you can use the next methods:

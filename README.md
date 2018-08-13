@@ -45,7 +45,7 @@ Well done, You can use `ShipitAPI` in your application :D
 
 ## Getting Started
 
-ShipitAPI has the next methods to use API's Shipit:
+ShipitAPI gem has the next methods to use API's Shipit:
 
 1. Commune: Get communes by: all, id or name
 2. Quotation: Get prices from our calculator
@@ -105,10 +105,24 @@ ShipitAPI::Quotation.get_prices(package)
 Shipit by default use `:lower_price` to send packages :fire:
 
 ### 3. Setting
+In this class you can use the next methods:
+
+a. `info` method
+
+Return your current setting information
+
+```ruby
+ShipitAPI::Setting.info
+
+# Response
+#  {:id=>99999999, :email_alert=>nil, :email_notification=>nil, :service_id=>3, :company_id=>999999, :is_default_price=>true, :default_courier=>"cxp", :created_at=>"2018-04-20T10:03:25.142-03:00", :updated_at=>"2018-04-20T10:03:25.142-03:00", :configuration=>{:pp=>{:key=>"", :secret_key=>"", :price=>"", :sandbox=>true}}}
+```
 
 ### 4. Package
+In this class you can use the next methods:
 
 ### 5. Sku
+In this class you can use the next methods:
 
 
 ## Contributing

@@ -47,13 +47,23 @@ Well done, You can use `ShipitAPI` in your application :D
 
 ShipitAPI has the next methods to use API's Shipit:
 
-1. Commune
-2. Quotation
-3. Setting
-4. Package
-5. SKU (Only fulfillment accounts!)
+1. Commune: Get communes by: all, id or name
+2. Quotation: Get prices from our calculator
+3. Setting: Get your current settings
+4. Package: Create and get packages into your account.
+5. SKU (Only fulfillment accounts!): Get your skus
 
 
+
+### 1. Commune
+
+### 2. Quotation
+
+### 3. Setting
+
+### 4. Package
+
+### 5. Sku
 
 
 ## Contributing

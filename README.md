@@ -58,17 +58,34 @@ ShipitAPI has the next methods to use API's Shipit:
 ### 1. Commune
 In this method you can use the next methods:
 
-a. `All` method
+a. `all` method
+Return all communes from API
 ```ruby
- ShipitAPI::Commune.all
+ShipitAPI::Commune.all
 
 # Response
 # [{"id"=>46, "region_id"=>6, "name"=>"CASABLANCA", "code"=>"05102", "is_starken"=>nil, "is_chilexpress"=>nil, "is_generic"=>true, "is_reachable"=>true, "created_at"=>"2016-12-16T03:12:23.714-03:00", "updated_at"=>"2018-07-03T11:10:24.674-04:00", "couriers_availables"=>{"dhl"=>"CASABLANCA", "starken"=>"CASABLANCA", "chilexpress"=>"CASABLANCA", "correoschile"=>"CASABLANCA"}, "is_available"=>false}, {"id"=>4, "region_id"=>1, "name"=>"GENERAL LAGOS", "code"=>"15202", "is_starken"=>nil, "is_chilexpress"=>nil, "is_generic"=>true, "is_reachable"=>true, "created_at"=>"2016-12-16T03:12:23.398-03:00", "updated_at"=>"2018-05-04T12:31:14.176-03:00", "couriers_availables"=>{"dhl"=>"", "starken"=>"GENERAL LAGOS", "chilexpress"=>"", "correoschile"=>""}, "is_available"=>false},...]
 
 ```
-b. `ShipitAPI::Commune.find({ id: 12 })`
-c. `ShipitAPI::Commune.find_by_name({ name: 'LAS CONDES' })`
+b. `find` method
+Return commune by `commune ID`
 
+```ruby
+ShipitAPI::Commune.find({ id: 12 })
+
+# Response
+# {:id=>12, :region_id=>3, :name=>"ANTOFAGASTA", :code=>"02101", :is_starken=>nil, :is_chilexpress=>nil, :is_generic=>true, :is_reachable=>true, :created_at=>"2016-12-16T03:12:23.458-03:00", :updated_at=>"2018-07-05T21:35:21.128-04:00", :couriers_availables=>{:dhl=>"", :starken=>"ANTOFAGASTA", :chilexpress=>"ANTOFAGASTA", :correoschile=>"ANTOFAGASTA"}, :is_available=>false}
+```
+
+c. `find_by_name` method
+Return commune by `commune name`
+
+```ruby
+ShipitAPI::Commune.find_by_name({ name: 'LAS CONDES' })
+
+# Response
+# {:id=>308, :region_id=>7, :name=>"LAS CONDES", :code=>"13114", :is_starken=>nil, :is_chilexpress=>nil, :is_generic=>true, :is_reachable=>true, :created_at=>"2016-12-16T03:12:25.619-03:00", :updated_at=>"2018-07-03T11:10:28.388-04:00", :couriers_availables=>{:dhl=>"LAS CONDES", :starken=>"LAS CONDES", :chilexpress=>"LAS CONDES", :correoschile=>"LAS CONDES"}, :is_available=>true}
+```
 
 ### 2. Quotation
 

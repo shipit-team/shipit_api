@@ -121,13 +121,20 @@ ShipitAPI::Setting.info
 ### 4. Package
 In this class you can use the next methods:
 
+a. `find` method
+b. `all` method
+c. `latest` method
+d. `save` method
+
 ### 5. Sku
 In this class you can use the next methods:
+a. `find` method
+b. `all` method
 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/patojimenez/shipit_api. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/shipit-team/shipit_api. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 

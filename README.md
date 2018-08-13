@@ -62,6 +62,9 @@ a. `All` method
 ```ruby
  ShipitAPI::Commune.all
 
+# Response
+# [{"id"=>46, "region_id"=>6, "name"=>"CASABLANCA", "code"=>"05102", "is_starken"=>nil, "is_chilexpress"=>nil, "is_generic"=>true, "is_reachable"=>true, "created_at"=>"2016-12-16T03:12:23.714-03:00", "updated_at"=>"2018-07-03T11:10:24.674-04:00", "couriers_availables"=>{"dhl"=>"CASABLANCA", "starken"=>"CASABLANCA", "chilexpress"=>"CASABLANCA", "correoschile"=>"CASABLANCA"}, "is_available"=>false}, {"id"=>4, "region_id"=>1, "name"=>"GENERAL LAGOS", "code"=>"15202", "is_starken"=>nil, "is_chilexpress"=>nil, "is_generic"=>true, "is_reachable"=>true, "created_at"=>"2016-12-16T03:12:23.398-03:00", "updated_at"=>"2018-05-04T12:31:14.176-03:00", "couriers_availables"=>{"dhl"=>"", "starken"=>"GENERAL LAGOS", "chilexpress"=>"", "correoschile"=>""}, "is_available"=>false},...]
+
 ```
 b. `ShipitAPI::Commune.find({ id: 12 })`
 c. `ShipitAPI::Commune.find_by_name({ name: 'LAS CONDES' })`

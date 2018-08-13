@@ -56,6 +56,16 @@ ShipitAPI has the next methods to use API's Shipit:
 
 
 ### 1. Commune
+In this method you can use the next methods:
+
+a. `All` method
+```ruby
+ ShipitAPI::Commune.all
+
+```
+b. `ShipitAPI::Commune.find({ id: 12 })`
+c. `ShipitAPI::Commune.find_by_name({ name: 'LAS CONDES' })`
+
 
 ### 2. Quotation
 

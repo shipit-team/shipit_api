@@ -22,9 +22,8 @@ By default sandbox is false. If you need to active sandbox contact us. (integrac
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'shipit_api'
+gem 'shipit_api', '~> 0.1.1'
 ```
-
 And then execute:
 
     $ bundle
@@ -33,9 +32,26 @@ Or install it yourself as:
 
     $ gem install shipit_api
 
+After that create a file with name `shipit.rb` inside `initializer` directory with the next code:
+
+```ruby
+ ShipitAPI::Config.setup do |config|
+    config.x_shipit_email = 'YOUR_ACCOUNT_EMAIL'
+    config.x_shipit_token = 'YOUR_ACCESS_TOKEN'
+ end
+```
+
+Well done, You can use `ShipitAPI` in your application :D
+
 ## Getting Started
 
-Shipit API uses
+ShipitAPI has the next methods to use API's Shipit:
+
+1. Commune
+2. Quotation
+3. Setting
+4. Package
+5. SKU (Only fulfillment accounts!)
 
 
 

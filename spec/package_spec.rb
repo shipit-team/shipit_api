@@ -15,11 +15,11 @@ RSpec.describe ShipitAPI::Package do
       expect(package).to respond_to(:latest)
     end
 
-    xit 'must parse the api response from JSON to Hash' do
+    it 'must parse the api response from JSON to Hash' do
       expect(package.latest).to be_an_instance_of(Hash)
     end
 
-    xit 'must get the right latest reference' do
+    it 'must get the right latest reference' do
       expect(package.latest['reference']).to eq(last_package['reference'])
     end
   end
@@ -72,12 +72,9 @@ RSpec.describe ShipitAPI::Package do
   end
 
   describe 'dynamic attributes' do
-    before do
-      @package = package.latest
-    end
-
     it 'must return the attribute values if present in latest' do
-      expect(@package['reference']).to eq("app-007")
+      response = package.latest
+      expect(response[:reference]).to be_an_instance_of(String)
     end
   end
 end

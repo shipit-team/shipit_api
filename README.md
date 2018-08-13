@@ -1,4 +1,4 @@
-Shipit API
+Shipit API :dolphin:
 ===========
 
 The Shipit API gem allows Ruby developers to access to admin information of Shipit client account.
@@ -123,7 +123,24 @@ In this class you can use the next methods:
 
 a. `find` method
 b. `all` method
+
+Return all your packages
+
+```ruby
+ShipitAPI::Package.all
+
+# Response
+# [{:id=>19823773, :reference=>"test-19ci2", :full_name=>"Nelson Jimenez", :email=>"nelson@shipit.cl", :items_count=>1, :cellphone=>"+569905021", :is_payable=>false, :packing=>"Sin Empaque", :shipping_type=>"Normal", :destiny=>"Domicilio", :courier_for_client=>"chilexpress", :tracking_number=>"99716543522", :approx_size=>nil, :status=>"in_preparation", :courier_status=>"Pieza en poder del remitente", :length=>10.0, :width=>10.0, :height=>10.0, :weight=>1.0,...]
+```
 c. `latest` method
+Return latest package created.
+```ruby
+ShipitAPI::Package.latest
+
+# Response
+# {:id=>12389723, :reference=>"test-1prcf", :full_name=>"Nelson Jimenez", :email=>"nelson@shipit.cl", :items_count=>1, :cellphone=>"+569905021", :is_payable=>false, :packing=>"Sin Empaque", :shipping_type=>"Normal", :destiny=>"Domicilio", ...}
+```
+
 d. `save` method
 
 ### 5. Sku
